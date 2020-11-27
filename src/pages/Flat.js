@@ -2,6 +2,7 @@
 import React,{Component} from 'react';
 import Navbar from '../components/Navbar';
 import axios from 'axios';
+import '../css/Flat.css';
 class Flat extends Component{
   constructor(){
     super();
@@ -94,31 +95,31 @@ class Flat extends Component{
                 {/* TAKING INPUTS FROM ADMIN */}
 
              <div>
-                <div class="card mt-5 container">
+                <div class="card mt-5 container fit-card">
                   <div class="card-body">
                      <form onSubmit={this.onSubmitHandler.bind(this)}>
-                    <div className="form-group">
-                    <label>Flat_No</label>
-                    <input value={this.flat_no} onChange={this.onChangedFlatNo} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </input>
-                    </div>
-                    <div className="form-group">
-                    <label>Floor_No</label>
-                    <input value={this.floor_no} onChange={this.onChangedFloorNo} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </input>
-                    </div>
-                    <div className="form-group">
-                    <label>Block_No</label>
-                    <input value={this.block_no} onChange={this.onChangedBlockNo} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </input>
-                    </div>
-                    <div className="form-group">
-                    <label>Charge_Id</label>
-                    <input value={this.id} onChange={this.onChangedId} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </input>
-                    </div>
-                    <button type="submit" className="btn btn-primary mx-auto w-25">Submit</button>
-                </form>
+                          <div className="form-group">
+                          <label>Flat_No</label>
+                          <input value={this.flat_no} onChange={this.onChangedFlatNo} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </input>
+                          </div>
+                          <div className="form-group">
+                          <label>Floor_No</label>
+                          <input value={this.floor_no} onChange={this.onChangedFloorNo} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </input>
+                          </div>
+                          <div className="form-group">
+                          <label>Block_No</label>
+                          <input value={this.block_no} onChange={this.onChangedBlockNo} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </input>
+                          </div>
+                          <div className="form-group">
+                          <label>Charge_Id</label>
+                          <input value={this.id} onChange={this.onChangedId} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </input>
+                          </div>
+                          <button type="submit" className="btn btn-primary mx-auto w-25">Submit</button>
+                    </form>
                   </div>
                 </div>
                
