@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Navbar from '../components/Navbar';
 import axios from 'axios';
+import '../css/Flat.css';
 class RemoveFlat extends Component{
   constructor(){
     super();
@@ -40,14 +41,18 @@ class RemoveFlat extends Component{
 
                 {/* TAKING INPUTS */}
              <div>
+             <div class="card mt-5 container fit-card">
+                  <div class="card-body">
                 <form onSubmit={this.onSubmitHandler.bind(this)}>
                     <div className="form-group">
                     <label>Flat_No</label>
                     <input value={this.flat_number} onChange={this.onChangedFlatNo} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </input>
                     </div>
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    <button type="submit" className="btn btn-danger w-25">Remove</button>
                 </form>
+                </div>
+                </div>
             </div>
                   </div>
            

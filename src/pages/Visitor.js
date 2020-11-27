@@ -104,8 +104,12 @@ class Visitor extends Component{
 
           {/* TAKING INPUTS */}
           <div>
+          <div class="card mt-5 container fit-card">
+                  <div class="card-body">
                 <form onSubmit={this.onSubmitHandler.bind(this)}>
-                    <div className="form-group">
+                  <div className="row">
+                    <div className="col">
+                       <div className="form-group">
                             <label>Id</label>
                             <input value={this.id} onChange={this.onChangedId} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </input>
@@ -125,7 +129,9 @@ class Visitor extends Component{
                             <input value={this.address} onChange={this.onChangedAddress} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </input>
                     </div>
-                    <div className="form-group">
+                    </div>
+                    <div className="col">
+                     <div className="form-group">
                             <label>Visitor pass id</label>
                             <input value={this.visitor_pass_id} onChange={this.onChangedVisitorPassId} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </input>
@@ -145,8 +151,14 @@ class Visitor extends Component{
                             <input value={this.flat_number} onChange={this.onChangedFlatNumber} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </input>
                     </div>
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                   
+                   
+                    <button type="submit" className="btn btn-primary w-25">Submit</button>
                 </form>
+                </div>
+                </div>
             </div>
                       </div>
             

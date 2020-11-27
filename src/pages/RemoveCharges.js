@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Navbar from '../components/Navbar';
 import axios from 'axios';
+import '../css/Flat.css';
 class RemoveCharges extends Component{
   constructor(){
     super();
@@ -40,14 +41,18 @@ class RemoveCharges extends Component{
                 {/* TAKING INPUTS */}
 
              <div>
+             <div class="card mt-5 container fit-card">
+                  <div class="card-body">
                 <form onSubmit={this.onSubmitHandler.bind(this)}>
                     <div className="form-group">
                     <label>Charge_Id</label>
                     <input value={this.id} onChange={this.onChangedId} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </input>
                     </div>
-                    <button type="submit" className="btn btn-danger">Submit</button>
+                    <button type="submit" className="btn btn-danger">Remove</button>
                 </form>
+                </div>
+                </div>
             </div>
                   </div>
 

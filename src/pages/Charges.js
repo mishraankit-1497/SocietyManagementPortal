@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Navbar from '../components/Navbar';
 import axios from 'axios';
+import '../css/Flat.css';
 class Charges extends Component{
 
     constructor(){
@@ -87,7 +88,11 @@ class Charges extends Component{
 
                     {/* TAKE INPUTS FROM THE ADMIN */}
                     <div>
+                    <div class="card mt-5 container fit-card">
+                  <div class="card-body">
                 <form onSubmit={this.onSubmitHandler.bind(this)}>
+                <div className="row">
+                  <div className="col">
                     <div className="form-group">
                          <label>Id</label>
                          <input value={this.id} onChange={this.onChangedId} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -103,6 +108,8 @@ class Charges extends Component{
                          <input value={this.water_bill} onChange={this.onChangedWaterBill} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </input>
                     </div>
+                  </div>
+                  <div className="col">
                     <div className="form-group">
                          <label>Electricity bill</label>
                          <input value={this.electricity_bill} onChange={this.onChangedElectricityBill} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -118,8 +125,14 @@ class Charges extends Component{
                          <input value={this.flat_number} onChange={this.onChangedFlatNumber} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </input>
                     </div>
-                    <button type="submit" className="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+                    
+                    
+                    <button type="submit" className="btn btn-primary w-25">Submit</button>
                     </form>
+                    </div>
+                    </div>
             </div>
 
             </div>
